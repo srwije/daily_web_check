@@ -61,7 +61,7 @@ def main():
         smtp_server='smtp.gmail.com',
         smtp_port=587,
         sender_email='keerthi.office1990@gmail.com',
-        sender_password= # App password
+        sender_password= ("APP_PASS") # App password
 
     )
     # recipient_emails = ['ravinda.esol@gmail.com', 'keerthi.office1990@gmail.com']
