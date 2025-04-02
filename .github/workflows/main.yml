@@ -24,4 +24,7 @@ jobs:
       - name: Run status script
         run: python status.py
         env:
-          APP_PASSWORD: ${{ secrets.APP_PASS }}  # ✅ Loads your GitHub Secret
+          APP_PASS: ${{ secrets.APP_PASS }}  # ✅ Loads your GitHub Secret
+
+
+
