@@ -67,7 +67,7 @@ def main():
 
     )
     # recipient_emails = ['ravinda.esol@gmail.com', 'keerthi.office1990@gmail.com']
-    recipient_emails = ['ravinda.esol@gmail.com']
+    recipient_emails = ['ravinda.esol@gmail.com', 'keerthi.office1990@gmail.com']
     email_notifier = EmailNotifier(email_credentials, recipient_emails)
 
     # Use the outer UrlChecker class (returns all results)
