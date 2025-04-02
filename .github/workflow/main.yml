@@ -19,8 +19,7 @@ jobs:
           python-version: '3.10'  # You can set this to the version you use
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
+      
       - name: Run status script
         run: python daily_status.py
         env:
