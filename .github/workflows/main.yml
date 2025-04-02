@@ -19,6 +19,6 @@ jobs:
           python-version: '3.10'  # You can set this to the version you use
 
       - name: Run status script
-        run: python daily_status.py
+        run: python status.py
         env:
           APP_PASSWORD: ${{ secrets.APP_PASS }}  # secret here
