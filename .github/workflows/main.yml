@@ -19,17 +19,12 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests  # ✅ Installs the 'requests' package
+        run: pip install requests
 
       - name: Run status script
         run: python status.py
         env:
-          APP_PASSWORD: ${{ secrets.APP_PASS }}  # ✅ Loads your GitHub Secret
-          
-      - name: Check if APP_PASSWORD is set
-        run: 'echo "Secret received: ${APP_PASSWORD//?/*}"'
-        env:
-          APP_PASSWORD: ${{ secrets.APP_PASS }}
+          APP_PASSWORD: ${{ secrets.APP_PASS }}  # GitHub Secret
 
 
 
