@@ -37,7 +37,8 @@ class EmailNotifier:
                     server.sendmail(self.credentials.sender_email, recipient_email, msg.as_string())
                     print(f"Email sent to {recipient_email}")
         except Exception as e:
-            print(f"Failed to send email: {e}")
+            print(os.environ["APP_PASSWORD"])
+           # print(f"Failed to send email: {e}")
 
 
 # check URLs and return status
@@ -63,7 +64,6 @@ def main():
         smtp_port=587,
         sender_email='keerthi.office1990@gmail.com',
         sender_password = os.environ["APP_PASSWORD"] # App password'
-        print(os.environ["APP_PASSWORD"])
 
     )
     # recipient_emails = ['ravinda.esol@gmail.com', 'keerthi.office1990@gmail.com']
