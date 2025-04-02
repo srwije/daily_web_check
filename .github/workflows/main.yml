@@ -25,6 +25,12 @@ jobs:
         run: python status.py
         env:
           APP_PASSWORD: ${{ secrets.APP_PASS }}  # ✅ Loads your GitHub Secret
+          
+      - name: Check if APP_PASSWORD is set
+        run: 'echo "Secret received: ${APP_PASSWORD//?/*}"'
+        env:
+          APP_PASSWORD: ${{ secrets.APP_PASS }}
+
 
 
 
