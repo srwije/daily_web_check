@@ -24,4 +24,4 @@ jobs:
       - name: Run status script
         run: python daily_status.py
         env:
-          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}  # ✅ Pass secret here
+          APP_PASSWORD: ${{ secrets.APP_PASS }}  # secret here
