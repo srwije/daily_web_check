@@ -1,5 +1,6 @@
 import requests
 import smtplib
+import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from urls import urls
@@ -61,7 +62,7 @@ def main():
         smtp_server='smtp.gmail.com',
         smtp_port=587,
         sender_email='keerthi.office1990@gmail.com',
-        sender_password= ("APP_PASS") # App password
+        sender_password = os.environ["APP_PASS"] # App password
 
     )
     # recipient_emails = ['ravinda.esol@gmail.com', 'keerthi.office1990@gmail.com']
