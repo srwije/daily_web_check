@@ -83,7 +83,7 @@ def main():
         else:
             message_lines.append(f"❌ {url} FAILED with status: {status}")
 
-    subject = "✅ All Websites Are Up" if not failed else "❗ Some Websites Failed"
+    subject = "All Websites Are Up" if not failed else "Some Websites Failed"
     message = "\n".join(message_lines)
 
     email_notifier.send_email(subject, message)
